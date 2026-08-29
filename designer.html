@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sketch a bespoke Steel & Spark piece." />
+    <title>Design your own | Steel & Spark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="designer.css" />
+  </head>
+  <body>
+    <header class="site-header"><a class="brand" href="index.html" aria-label="Steel and Spark home"><img src="assets/logo.png" alt="Steel and Spark" /></a><nav class="nav-links" aria-label="Main navigation"><a href="index.html#examples">Examples</a><a href="collection.html">Shop</a><a href="index.html#story">Our story</a></nav><a class="header-cta" href="index.html#contact">Contact <span>↗</span></a></header>
+    <main>
+      <section class="designer-intro section-pad"><a class="back-link" href="collection.html">← Back to catalogue</a><p class="eyebrow">Custom studio / 01</p><h1>Make your<br /><em>mark.</em></h1><p>Sketch a starting point for your bespoke piece. This is your idea board — we’ll turn the strongest version into something cut, formed and made to last.</p></section>
+      <section class="designer-workbench section-pad">
+        <div class="tool-panel">
+          <div class="tool-heading"><p class="eyebrow">Your workspace</p><span class="mono" id="design-status">READY / 01</span></div>
+          <div class="tool-group"><span class="tool-label">Tool</span><div class="tool-buttons"><button class="tool-button active" data-tool="pen" type="button">Pen</button><button class="tool-button" data-tool="line" type="button">Line</button><button class="tool-button" data-tool="rect" type="button">Square</button><button class="tool-button" data-tool="circle" type="button">Circle</button><button class="tool-button" data-tool="text" type="button">Text</button></div></div>
+          <div class="tool-group tool-controls"><label for="stroke-width">Line weight <output id="stroke-value">6</output></label><input id="stroke-width" type="range" min="2" max="24" value="6" /><label for="ink-colour">Ink</label><select id="ink-colour"><option value="#ffe000">Spark yellow</option><option value="#f3f0e8">Warm white</option><option value="#b56d45">Corten rust</option></select></div>
+          <div class="tool-actions"><button id="undo-button" type="button">Undo</button><button id="clear-button" type="button">Clear</button><button id="grid-button" type="button" aria-pressed="true">Grid on</button></div>
+          <div class="tool-note"><span>✦</span><p>Keep important detail away from the edge. We’ll review the proportions and material options with you.</p></div>
+        </div>
+        <div class="canvas-wrap"><div class="canvas-topline"><span class="mono">CUSTOM / SKETCH</span><span class="mono">1200 × 760</span></div><div class="canvas-frame"><canvas id="design-canvas" width="1200" height="760" aria-label="Custom design sketch canvas"></canvas><p class="canvas-empty" id="canvas-empty">Start drawing your idea</p></div><div class="canvas-footer"><span class="mono" id="object-count">0 marks</span><button class="button button-primary" id="export-button" type="button">Save sketch <span>↓</span></button></div></div>
+      </section>
+      <section class="designer-next section-pad"><div><p class="eyebrow">Next step</p><h2>Turn the sketch<br /><em>into steel.</em></h2></div><div><p>When you’re happy with your starting point, send it to the workshop. We’ll come back with a considered design, material guidance and a quote.</p><a class="button button-light" id="quote-button" href="mailto:hello@steelnspark.co.uk?subject=My%20Steel%20%26%20Spark%20sketch">Send for a quote <span>↗</span></a></div></section>
+    </main>
+    <footer class="site-footer"><a class="brand" href="index.html"><img src="assets/logo.png" alt="Steel and Spark" /></a><p>© 2026 Steel & Spark. Made with intent.</p><a href="designer.html">Back to top ↑</a></footer>
+    <script src="designer.js"></script>
+  </body>
+</html>
