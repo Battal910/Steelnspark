@@ -11,11 +11,12 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { background: var(--ink); color: var(--paper); font-family: var(--sans); margin: 0; overflow-x: hidden; }
+body { background: radial-gradient(circle at 50% 7%, rgba(255, 224, 0, .08), transparent 22%), radial-gradient(circle at 8% 72%, rgba(255, 224, 0, .035), transparent 26%), linear-gradient(120deg, #030303 0%, #0b0c0a 48%, #030303 100%); color: var(--paper); font-family: var(--sans); margin: 0; overflow-x: hidden; position: relative; }
+body::before { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='.3'/%3E%3C/svg%3E"); content: ""; inset: 0; opacity: .055; pointer-events: none; position: fixed; z-index: 5; }
 a { color: inherit; }
 .site-header { align-items: center; background: rgba(5, 5, 5, .94); border-bottom: 1px solid var(--line); display: flex; height: 86px; justify-content: space-between; padding: 0 5vw; position: relative; z-index: 3; }
 .brand { align-items: center; display: flex; flex: 0 0 auto; }
-.brand img { display: block; filter: drop-shadow(0 0 12px rgba(255, 224, 0, .14)); height: auto; width: 134px; }
+.brand img { display: block; filter: drop-shadow(0 0 12px rgba(255, 224, 0, .14)); height: 64px; object-fit: contain; width: 64px; }
 .nav-links { display: flex; gap: 34px; margin-left: auto; margin-right: 44px; }
 .nav-links a, .header-cta, .text-link, .site-footer a { font-family: var(--mono); font-size: 11px; text-decoration: none; }
 .nav-links a, .site-footer a { color: var(--muted); transition: color .2s; }
@@ -85,11 +86,11 @@ h1 em, h2 em { color: var(--yellow); font-style: normal; }
 .button-light { border: 1px solid var(--line); }
 .contact-stamp { border: 1px solid var(--yellow); color: var(--yellow); font-family: var(--mono); font-size: 11px; line-height: 1.1; padding: 15px 18px; }
 .site-footer { align-items: center; border-top: 1px solid var(--line); display: flex; justify-content: space-between; padding: 26px 5vw; }
-.site-footer .brand img { width: 112px; }
+.site-footer .brand img { height: 52px; width: 52px; }
 .site-footer p { color: var(--muted); font-family: var(--mono); font-size: 10px; }
 @media (max-width: 760px) {
   .site-header { height: 76px; padding: 0 7vw; }
-  .brand img { width: 112px; }
+  .brand img { height: 58px; width: 58px; }
   .nav-links { gap: 15px; margin-right: 18px; }
   .nav-links a { font-size: 9px; }
   .header-cta { font-size: 9px; padding: 10px; }
