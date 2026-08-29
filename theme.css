@@ -1,0 +1,11 @@
+.site-header{height:104px;background:rgba(9,10,8,.96)}
+.brand-radial{height:104px;isolation:isolate;position:relative;width:206px}
+.brand-radial img{filter:drop-shadow(0 0 18px rgba(255,224,0,.3));position:relative;width:88px;z-index:2}
+.radial-ring,.radial-rays{border:1px solid rgba(255,224,0,.55);border-radius:50%;height:102px;left:50%;position:absolute;top:50%;transform:translate(-50%,-50%);width:102px}
+.radial-ring-one{box-shadow:0 0 0 6px rgba(255,224,0,.05),0 0 25px rgba(255,224,0,.2)}
+.radial-ring-two{border-color:rgba(255,224,0,.22);height:126px;width:126px}
+.radial-rays{border:0;height:140px;width:140px;background:repeating-conic-gradient(from 0deg,rgba(255,224,0,.65) 0deg 1deg,transparent 1deg 30deg);mask:radial-gradient(circle,transparent 0 48%,#000 49% 51%,transparent 52%)}
+.hero-art{background:radial-gradient(circle at center,rgba(255,224,0,.18),transparent 48%)}
+.hero-art img{filter:drop-shadow(0 0 28px rgba(255,224,0,.3))}
+.hero-rays{background:repeating-conic-gradient(from 0deg,rgba(255,224,0,.5) 0deg 1deg,transparent 1deg 20deg);height:480px;mask:radial-gradient(circle,transparent 0 43%,#000 44% 46%,transparent 47%);position:absolute;width:480px}
+@media(max-width:760px){.site-header{height:82px}.brand-radial{height:82px;width:170px}.brand-radial img{width:70px}.radial-ring{height:82px;width:82px}.radial-ring-two{height:102px;width:102px}.radial-rays{height:116px;width:116px}}
