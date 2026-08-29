@@ -122,3 +122,16 @@ h1 em, h2 em { color: var(--yellow); font-style: normal; }
   .shop-tabs { gap: 17px; overflow-x: auto; }
   .shop-tab { white-space: nowrap; }
 }
+
+.catalogue-intro { border-bottom: 1px solid var(--line); padding-bottom: 78px; padding-top: 78px; }
+.back-link { color: var(--muted); display: inline-block; font-family: var(--mono); font-size: 10px; margin-bottom: 75px; text-decoration: none; }
+.back-link:hover { color: var(--yellow); }
+.catalogue-intro h1 { font-size: clamp(64px, 10vw, 136px); }
+.catalogue-intro > p:last-child { color: var(--muted); font-size: 16px; line-height: 1.5; margin: 38px 0 0; max-width: 430px; }
+.catalogue-products { padding-bottom: 120px; padding-top: 58px; }
+.catalogue-products .product-grid { grid-template-columns: repeat(3, 1fr); }
+.catalogue-products .product-meta h2 { font-size: 20px; font-weight: 500; letter-spacing: -.05em; line-height: 1; }
+.catalogue-note { border-top: 1px solid var(--line); padding-bottom: 120px; padding-top: 120px; }
+.catalogue-note h2 { font-size: clamp(54px, 7vw, 96px); margin-bottom: 45px; }
+@media (max-width: 760px) { .catalogue-intro { padding-bottom: 62px; padding-top: 62px; } .back-link { margin-bottom: 55px; } .catalogue-products .product-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .catalogue-products .product-grid { grid-template-columns: 1fr; } }
