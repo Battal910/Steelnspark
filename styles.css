@@ -75,6 +75,7 @@ h1 em, h2 em { color: var(--yellow); font-style: normal; }
 .product-price span { color: var(--yellow); font-size: 19px; }
 .product-link { border-top: 1px solid var(--line); display: block; font-family: var(--mono); font-size: 10px; padding-top: 12px; text-decoration: none; }
 .product-link:hover { color: var(--yellow); }
+.home-page #shop { display: none; }
 .story { background: var(--ink); border-top: 1px solid var(--line); display: grid; gap: 10vw; grid-template-columns: 1fr 1fr; padding-bottom: 120px; padding-top: 120px; }
 .story-copy { align-self: end; max-width: 410px; }
 .story-copy > p:first-child { font-size: 21px; letter-spacing: -.03em; line-height: 1.35; margin: 0 0 44px; }
